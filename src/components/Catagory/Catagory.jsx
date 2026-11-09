@@ -11,8 +11,8 @@
         <section className={classes.Catagory__container}>
         {
             catagoryImage.map((catagoryItem)=>(
-            <CatagoryCard data = {catagoryItem}
-                />
+            <CatagoryCard key={catagoryItem.title} data={catagoryItem}/>
+                
             ))
     }
         </section>

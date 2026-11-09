@@ -12,7 +12,6 @@ function App() {
       <Header/>
       <Carousel/>
       <Catagory/>
-      
       <Product/>
         
 </div>
