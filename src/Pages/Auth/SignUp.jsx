@@ -1,11 +1,13 @@
     import React from 'react'
+    import Layout from '../../components/Layout/Layout';
     import classes from './SignUp.module.css'
+
 
     function SignUp() {
     return (
-        <div>
+        <Layout>
         <p>Sign Up</p>
-        </div>
+        </Layout>
     )
     }
 

@@ -1,11 +1,12 @@
     import React from 'react'
     import classes from './Orders.module.css'
+    import Layout from '../../components/Layout/Layout'
 
     function Orders() {
     return (
-        <div>
+        <Layout>
         <p>Order</p>
-        </div>
+        </Layout>
     )
     }
 

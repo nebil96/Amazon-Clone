@@ -1,11 +1,12 @@
     import React from 'react'
+    import Layout from '../../components/Layout/Layout';
     import classes from './Cart.module.css'
 
     function Cart() {
     return (
-        <div>
+        <Layout>
         <p>Cart</p>
-        </div>
+        </Layout>
     )
     }
 

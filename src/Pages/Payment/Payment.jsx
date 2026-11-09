@@ -1,11 +1,13 @@
     import React from 'react'
+    import Layout from '../../components/Layout/Layout';
     import classes from './Payment.module.css'
+    
 
     function Payment() {
     return (
-        <div>
+        <Layout>
         <p>Payment</p>
-        </div>
+        </Layout>
     )
     }
 

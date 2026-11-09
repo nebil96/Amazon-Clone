@@ -1,21 +1,10 @@
-import { useState } from 'react'
+
 import './App.css'
-// import Routing from './Router'
-import Carousel from './components/Carousel/CarouselEffect';
-import Catagory from './components/Catagory/Catagory';
-import Header from './components/Header/Header';
-import Product from './components/Product/Product';
+import Routing from './Router.jsx'
+
 
 function App() {
-  return (
-  <div>  
-      <Header/>
-      <Carousel/>
-      <Catagory/>
-      <Product/>
-        
-</div>
-  )
+  return (<Routing/>)
 }
 
 export default App

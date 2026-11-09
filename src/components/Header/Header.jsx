@@ -1,4 +1,5 @@
     import React from 'react'
+    import { Link } from 'react-router-dom';
     import classes from './Header.module.css';
     import LowerHeader from './LowerHeader';
     import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -13,9 +14,9 @@
                 {/* logo */}
                 <div className={classes.logo__container}>
                 
-                <a href="/">
+                <Link to="/">
                 <img src="https://pngimg.com/uploads/amazon/amazon_PNG25.png" alt="amazon-logo" />
-                </a>
+                </Link>
                 </div>
                 {/* Delivery */}
                 <div className={classes.delivery}>
@@ -39,33 +40,33 @@
             </div>
             {/* right side link */}
             <div className={classes.right__side}>
-                <a href="" className={classes.language}>
+                <Link to="" className={classes.language}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="" />
                 
                 <select name="" id="">
                     <option value="">EN</option>
                 </select>
                 
-                </a>
+                </Link>
                 
                 {/* three-components */}
-                <a href="">
+                <Link to="/auth">
                 <div>
                     <p>Hello, Sign In</p>
                     <span>Account & Lists</span>
                 </div>
-                </a>
+                </Link>
                 {/* orders */}
-                <a href="">
+                <Link to="/orders">
                 <p>Returns</p>
                 <span>& Orders</span>
-                </a>
+                </Link>
                 {/* cart */}
-                <a href='' className={classes.cart}>
+                <Link to='/cart' className={classes.cart}>
                 {/* icon */}
                     <BiCart  size={35}/>
                     <span>0</span>
-                </a>
+                </Link>
                 
 
             
