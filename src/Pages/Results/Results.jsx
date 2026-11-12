@@ -35,6 +35,7 @@ import Loader from '../../components/Loder/Loader';
                     key={product.id}
                     renderAdd= {true}
                     product= {product}
+                    renderDesc={false}
                     />
                 ))}
             </div>

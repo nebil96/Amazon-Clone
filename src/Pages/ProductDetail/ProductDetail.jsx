@@ -24,7 +24,7 @@ import Loader from '../../components/Loder/Loader';
         }, [])
     return (
         <Layout>
-            {isLoading? (<Loader/>): ( <ProductCard product={product} flex={true} renderDesc={true}/>) }
+            {isLoading? (<Loader/>): ( <ProductCard  renderAdd={true} product={product} flex={true} renderDesc={true}/>) }
         
         </Layout>
     )

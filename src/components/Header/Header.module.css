@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 .fixed{
     position: sticky;
@@ -81,7 +82,8 @@
     align-items: center;
     justify-content: center;
     max-width: 450px;
-    gap: 10px;
+    gap: 15px;
+   
 }
 .right__side a{
     text-decoration: none;
@@ -107,15 +109,18 @@
 }
 .cart{
     position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
 }
 .cart span{
     position: absolute;
-    top: 0px;
-    left: 16px;
+    top: -2px;
+    left: 17px;
     background-color: black;
     color: orange;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
 }
 .right__side a:hover, .delivery:hover, 
 .logo__container:hover, .lower__container ul li:hover{
