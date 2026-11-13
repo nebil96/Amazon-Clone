@@ -111,12 +111,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 5px 10px;
+    padding: 1px 3px 1px 2px; 
 }
+
 .cart span{
     position: absolute;
     top: -2px;
-    left: 17px;
+    left: 16px;
     background-color: black;
     color: orange;
     font-weight: bold;

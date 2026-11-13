@@ -16,6 +16,28 @@
 .container img {
     width: 100px !important;
 }
+.cart__product{
+    display: flex;
+    gap: 10px;
+}
+.btn__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btn{
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    border: none ;
+}
+.btn:hover svg {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
 .cart__container{
     padding: 20px;
 }
