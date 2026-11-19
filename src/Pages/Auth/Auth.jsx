@@ -25,7 +25,7 @@ import { Type } from '../../Utility/action.type'
                     })
                 })
                 .catch((err)=>{
-                    console.log(err)
+                    serErorr(err.message);
                 })
 
             }else{
@@ -36,8 +36,8 @@ import { Type } from '../../Utility/action.type'
                         user:userInfo.user
                     })
                 })
-                .catc((err)=>{
-                    console.log(err)
+                .catch((err)=>{
+                    serErorr(err.message);
                 })
 
             }
@@ -69,6 +69,11 @@ import { Type } from '../../Utility/action.type'
                 </p>
                 {/* create acc btn */}
                 <button type='submit' onClick={authHandler} name ="signup"  className={classes.login__registerBtn}> Create your Amazone Account</button>
+                {
+                    erorr && (
+                        <small style={{paddingTop: "5px" , color : "red"}}>{erorr}</small>
+                    )
+                }
             </div>
         </section>
     )
