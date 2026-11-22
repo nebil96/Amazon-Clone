@@ -11,11 +11,12 @@ import { axiosInstance } from '../../Api/axios';
 import { ClipLoader } from 'react-spinners';
 import { db  } from '../../Utility/firebase';
 import { doc, setDoc } from "firebase/firestore";
+import { Type } from "../../Utility/action.type";
 
     
 
     function Payment() {
-        const [{user, basket}] = useContext(DataContext);
+        const [{user, basket}, dispatch] = useContext(DataContext);
         
 
 
@@ -63,8 +64,11 @@ import { doc, setDoc } from "firebase/firestore";
                 amount: paymentIntent.amount,
                 created: paymentIntent.created,
                 });
+                // clear the basket
+                    dispatch({type:Type.EMPTY_BASKET});
+
                 setProcessing(false)
-                navigate("/Orders", {state:{msg:"you have places new order"}})
+                navigate("/Orders", {state:{msg:"you have placed a new order"}})
             }catch (error){
                 console.log(error)
                 setProcessing(false)
