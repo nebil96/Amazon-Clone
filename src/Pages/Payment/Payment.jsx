@@ -87,8 +87,8 @@ import { Type } from "../../Utility/action.type";
                 <h3>Delivery Address</h3>
                 <div>
                     <div>{user?.email}</div>
-                    <div>123 refg</div>
-                    <div> ethipia</div>
+                    <div>AddisAbaba</div>
+                    <div> Ethiopia</div>
                 </div>
             </div>
             <hr />
