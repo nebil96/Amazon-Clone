@@ -36,9 +36,9 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
                 {
                     basket?.length==0?(<p>Oops!! No item in your cart </p>):(
                         basket.map((item,i) =>{
-                            return <section className={classes.cart__product}> 
+                            return <section key={item.id} className={classes.cart__product}> 
                     <ProductCard
-                            key ={i}
+                            
                             product={item}
                             renderDesc={true}
                             renderAdd={false}
